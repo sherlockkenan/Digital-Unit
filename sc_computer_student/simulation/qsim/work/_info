@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\altera\13.1\mydesign\sc_computer_student\simulation\qsim
+vsc_computer
+Z1 I6C0I@Dz^4L<W;XLb46B4>3
+Z2 VA?:=4WmNzCAg>]eeU^<8X0
+Z3 dE:\altera\13.1\mydesign\sc_computer_student\simulation\qsim
+Z4 w1481593075
+Z5 8sc_computer.vo
+Z6 Fsc_computer.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+!i10b 1
+Z9 !s100 2a>=3hjY?4M4@We6TP]DL2
+!s85 0
+Z10 !s108 1481593076.158000
+Z11 !s107 sc_computer.vo|
+Z12 !s90 -work|work|sc_computer.vo|
+!s101 -O0
+vsc_computer_vlg_check_tst
+!i10b 1
+!s100 Oe8ViA7Mf4QZ;Aj@C?B2_1
+Im2>`Om986EFD@0N5XS`6P3
+VaYZND`L@Hc?fTU@3FlP:51
+R3
+Z13 w1481593071
+Z14 8sc_computer_test_wave_01.vwf.vt
+Z15 Fsc_computer_test_wave_01.vwf.vt
+L0 61
+R7
+r1
+!s85 0
+31
+Z16 !s108 1481593077.254000
+Z17 !s107 sc_computer_test_wave_01.vwf.vt|
+Z18 !s90 -work|work|sc_computer_test_wave_01.vwf.vt|
+!s101 -O0
+R8
+vsc_computer_vlg_sample_tst
+!i10b 1
+!s100 n>YUFLZMT8MX^TeA5=Al;2
+I:ei<A3nk63^l^<g>`:5YU2
+VV[nBiABGedODm5oSNlDoA1
+R3
+R13
+R14
+R15
+L0 29
+R7
+r1
+!s85 0
+31
+R16
+R17
+R18
+!s101 -O0
+R8
+vsc_computer_vlg_vec_tst
+!i10b 1
+!s100 h_<47J6@UBBj=TFI3TlmR1
+IIWJcZ_XY:TJ44GQkOg0kN2
+VmDHkRgb0GW[o2oea?bDTi1
+R3
+R13
+R14
+R15
+L0 2519
+R7
+r1
+!s85 0
+31
+R16
+R17
+R18
+!s101 -O0
+R8

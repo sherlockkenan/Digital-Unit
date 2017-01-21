@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="pipelinecpuio">
+		<CBX_INST_ENTRY INSTANCE_NAME="|pipelinecpuio|io_output:inst8|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_ibm.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|pipelinecpuio|pipelined_computer:inst|pipeif:if_stage|lpm_rom_irom:irom|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_9im1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|pipelinecpuio|pipelined_computer:inst|pipemem:mem_stage|lpm_ram_dq_dram:dram|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_4to1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|pipelinecpuio|io_output:inst10|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_ibm.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|pipelinecpuio|io_output:inst10|lpm_divide:Mod1" CBX_FILE_NAME="lpm_divide_l3m.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|pipelinecpuio|io_output:inst8|lpm_divide:Mod0" CBX_FILE_NAME="lpm_divide_l3m.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|pipelinecpuio|io_output:inst9|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_ibm.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|pipelinecpuio|io_output:inst9|lpm_divide:Mod1" CBX_FILE_NAME="lpm_divide_l3m.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|pipelinecpuio|io_output:inst10|lpm_divide:Mod0" CBX_FILE_NAME="lpm_divide_l3m.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|pipelinecpuio|io_output:inst8|lpm_divide:Mod1" CBX_FILE_NAME="lpm_divide_l3m.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|pipelinecpuio|io_output:inst9|lpm_divide:Mod0" CBX_FILE_NAME="lpm_divide_l3m.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

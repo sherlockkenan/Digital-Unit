@@ -1,0 +1,22 @@
+DEPTH = 64; % Memory depth and width are required %
+WIDTH = 64; % Enter a decimal number %
+ADDRESS_RADIX = HEX; % Address and value radixes are optional %
+DATA_RADIX = HEX; % Enter BIN, DEC, HEX, or OCT; unless %
+% otherwise specified, radixes = HEX %
+CONTENT
+BEGIN
+ 0  : 00; % (00)   main:  nop %    
+ 1  : 30f084000000; % (08)   irmovl $0x84, eax  addi $3, $0, 10000100b # address 84h out%
+ 7  : 30f3c0000000; % (0c)   irmovl $0xc0, ebx  addi $4, $0, 11000000b # address c0h in%
+ d  : 30f1c4000000; % (10)   irmovl $0xc4, ecx addi $5, $0, 11000100b # address c4h in%
+ 13 : 30f200000000; % (1c)   irmovl $0, edx addi $10,$0, 0         # r10 = 0 %
+ 19 : 30f700000000; % (20)   irmovl $0, edi  addi $11,$0, 0         # r11 = 0 %
+ 1f : 406000000000; % (2c)   loop:  rmmovl $esi,0(eax)  sw   $12, 0($3)        # output $12 to [84h] %
+ 25 : 30f600000000; % (20)   irmovl $0, esi addi $12,$0, 0         # r11 = 0 %
+ 2b : 6026;       %  (30)   add edx,esi  add  $12,$10,$11       # r12=r10+r11 %
+ 2d : 6076;       % (30)   add edi esi %
+ 2f : 502300000000;   %mrmovl 0(ecx),edi%
+ 35 : 507100000000; % (38)   mrmovl 0(ecx),edi  lw   $11,0($5)         # input data from [c4h] %
+ 3b : 701f000000; % (3c)   jmp loop                                   # loop %
+ 3f : 00000000; 
+END ;

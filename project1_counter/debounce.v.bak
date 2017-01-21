@@ -1,0 +1,15 @@
+module debounce(clk,in,out)
+input  clk,in;
+output out
+
+integer cnt
+
+always @ (posedge clk) 
+begin
+if (in) cnt <= cnt + 1'b1;
+else cnt <= 0;
+end
+
+assign out= (cnt==1000000) ? 1'b1 : 1'b0;
+
+endmodule

@@ -1,0 +1,10 @@
+module key_state(key,state);
+   input key;
+	output state;
+	
+	
+	
+   always @ (negedge control)
+		state <= ~state;
+
+endmodule

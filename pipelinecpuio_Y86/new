@@ -1,0 +1,42 @@
+DEPTH = 64; % Memory depth and width are required %
+WIDTH = 64; % Enter a decimal number %
+ADDRESS_RADIX = HEX; % Address and value radixes are optional %
+DATA_RADIX = HEX; % Enter BIN, DEC, HEX, or OCT; unless %
+% otherwise specified, radixes = HEX %
+CONTENT
+BEGIN
+ 0   : 00; % (00)   main:  nop ;     
+ 1   : 30f084000000; % (08)   irmovl $0x84, %eax ;                     addi $3, $0, 10000100b # address 84h out%
+ 6   : 30f3c0000000; % (0c)   irmovl $0xc0, %ebx ;                     addi $4, $0, 11000000b # address c0h in%
+ b   : 30f1c4000000; % (10)   irmovl $0xc4, %ecx ;                     addi $5, $0, 11000100b # address c4h in%
+ 10  : 30f200000000; % (1c)   irmovl $0, %edx;                         addi $10,$0, 0         # r10 = 0 %
+ 15  : 30f700000000; % (20)   irmovl $0, %edi ;                        addi $11,$0, 0         # r11 = 0 %
+ 1a  : 30f600000000; % (20)   irmovl $0, %esi ;                        addi $12,$0, 0         # r11 = 0 %
+ 1f  : 406000000000; % (2c)   loop:  rmmovl $esi,0(%eax)               sw   $12, 0($3)        # output $12 to [84h] %
+ 24  : 6026;       %  (30)   add %edx,%esi                            add  $12,$10,$11       # r12=r10+r11 %
+ 26  : 6076;       % (30)   add %edi %esi 
+ 28  : 502300000000;   % (34)   mrmovl 0(%ebx),%edx                       lw   $10,0($4)         # input data from [c0h] %
+ 2d  : 507100000000; % (38)   mrmovl 0(%ecx),%edi                       lw   $11,0($5)         # input data from [c4h] %
+ 32  : 701f000000; % (3c)   jmp loop                                   # loop %
+ 36  : 00000000; 
+END ;
+
+bnn 
+CONTENT
+BEGIN
+ 0  : 00000000; % (00)  %
+ 1  : 20010084; % (08)       addi $1, $0, 10000100b # address 84h out%
+ 2  : 200400c0; % (0c)       addi $4, $0, 11000000b # address c0h in%
+ 3  : 200200c4; % (10)       addi $2, $0, 11000100b # address c4h in%
+ 4  : 20030000; % (1c)       addi $3,$0, 0         # r3= 0 %
+ 5  : 20080000; % (20)       addi $8,$0, 0         # r8 = 0 %
+ 6  : 20070000; % (20)       addi $7,$0, 0         # r7 = 0 %
+ 7  : ac270000; % (2c) loop: sw   $7, 0($1)        # output $12 to [84h] %
+ 8  : 20070000; % (20)       addi $7,$0, 0         # r7 = 0 %
+ 9  : 00e33820; % (30)       add  $7,$7,$3       # r12=r10+r11 %
+ a  : 00e83820; % (30)       add  $7,$7,$8       # r12=r10+r11 %
+ b  : 8c830000; % (34)       lw   $3,0($4)         # input data from [c0h] %
+ c  : 8c480000; % (38)       lw   $8,0($2)         # input data from [c4h] %
+ d  : 08000007; % (3c)       j loop                 # loop %
+ e  : 00000000; 
+END ;

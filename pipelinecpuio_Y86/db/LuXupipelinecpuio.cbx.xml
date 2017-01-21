@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="LuXupipelinecpuio">
+		<CBX_INST_ENTRY INSTANCE_NAME="|pipelinecpuio|NumToHex:inst4|lpm_divide:Div4" CBX_FILE_NAME="lpm_divide_ibm.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|pipelinecpuio|NumToHex:inst6|lpm_divide:Mod5" CBX_FILE_NAME="lpm_divide_l3m.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|pipelinecpuio|pipelined_computer:inst|pipeif:if_stage|lpm_rom_irom:irom|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_i0n1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|pipelinecpuio|pipelined_computer:inst|pipemem:mem_stage|lpm_ram_dq_dram:dram|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_ibp1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|pipelinecpuio|NumToHex:inst1|lpm_divide:Div4" CBX_FILE_NAME="lpm_divide_ibm.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|pipelinecpuio|NumToHex:inst1|lpm_divide:Mod5" CBX_FILE_NAME="lpm_divide_l3m.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|pipelinecpuio|NumToHex:inst4|lpm_divide:Mod4" CBX_FILE_NAME="lpm_divide_l3m.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|pipelinecpuio|NumToHex:inst6|lpm_divide:Mod4" CBX_FILE_NAME="lpm_divide_l3m.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|pipelinecpuio|NumToHex:inst1|lpm_divide:Mod4" CBX_FILE_NAME="lpm_divide_l3m.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|pipelinecpuio|NumToHex:inst4|lpm_divide:Mod5" CBX_FILE_NAME="lpm_divide_l3m.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|pipelinecpuio|NumToHex:inst6|lpm_divide:Div4" CBX_FILE_NAME="lpm_divide_ibm.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

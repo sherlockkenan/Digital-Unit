@@ -1,0 +1,50 @@
+# do sc_computer.do 
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module sc_computer
+# 
+# Top level modules:
+# 	sc_computer
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module sc_computer_vlg_sample_tst
+# -- Compiling module sc_computer_vlg_check_tst
+# -- Compiling module sc_computer_vlg_vec_tst
+# 
+# Top level modules:
+# 	sc_computer_vlg_vec_tst
+# vsim -L cyclonev_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -voptargs=\"+acc\" -t 1ps -novopt work.sc_computer_vlg_vec_tst 
+# Loading work.sc_computer_vlg_vec_tst
+# Loading work.sc_computer
+# ** Error: (vsim-3033) nofile(37): Instantiation of 'generic_m10k' failed. The design unit was not found.
+# 
+#         Region: /sc_computer_vlg_vec_tst/i1/\imem|irom|altsyncram_component|auto_generated|ram_block1a0 
+#         Searched libraries:
+#             E:/altera/13.1/modelsim_ase/altera/verilog/cyclonev
+#             E:/altera/13.1/modelsim_ase/altera/verilog/altera
+#             E:/altera/13.1/modelsim_ase/altera/verilog/altera_mf
+#             E:/altera/13.1/modelsim_ase/altera/verilog/220model
+#             E:/altera/13.1/modelsim_ase/altera/vhdl/sgate
+#             E:/altera/13.1/modelsim_ase/altera/verilog/cyclonev
+# Loading altera_ver.dffeas
+# ** Error: (vsim-3033) nofile(37): Instantiation of 'generic_m10k' failed. The design unit was not found.
+# 
+#         Region: /sc_computer_vlg_vec_tst/i1/\dmem|dram|altsyncram_component|auto_generated|ram_block1a0 
+#         Searched libraries:
+#             E:/altera/13.1/modelsim_ase/altera/verilog/cyclonev
+#             E:/altera/13.1/modelsim_ase/altera/verilog/altera
+#             E:/altera/13.1/modelsim_ase/altera/verilog/altera_mf
+#             E:/altera/13.1/modelsim_ase/altera/verilog/220model
+#             E:/altera/13.1/modelsim_ase/altera/vhdl/sgate
+#             E:/altera/13.1/modelsim_ase/altera/verilog/cyclonev
+# ** Error: (vsim-3033) nofile(37): Instantiation of 'generic_m10k' failed. The design unit was not found.
+# 
+#         Region: /sc_computer_vlg_vec_tst/i1/\dmem|dram|altsyncram_component|auto_generated|ram_block1a12 
+#         Searched libraries:
+#             E:/altera/13.1/modelsim_ase/altera/verilog/cyclonev
+#             E:/altera/13.1/modelsim_ase/altera/verilog/altera
+#             E:/altera/13.1/modelsim_ase/altera/verilog/altera_mf
+#             E:/altera/13.1/modelsim_ase/altera/verilog/220model
+#             E:/altera/13.1/modelsim_ase/altera/vhdl/sgate
+#             E:/altera/13.1/modelsim_ase/altera/verilog/cyclonev
+# Loading work.sc_computer_vlg_sample_tst
+# Loading work.sc_computer_vlg_check_tst
+# Error loading design
